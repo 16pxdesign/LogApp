@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">LogApp</string>
+    <string name="app_name">Domino`s shifts</string>
+    <string name="addShift">Add shift</string>
 </resources>
