@@ -1,5 +1,8 @@
 package com.example.pingu.logapp;
 
+import android.app.DialogFragment;
+import android.app.FragmentManager;
+import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +12,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    DataSender sender;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,9 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         final Button addShifht = (Button) findViewById(R.id.addShift);
-        TextView dwa = (TextView) findViewById(R.id.dwa);
-        Log.d("gg", "gg");
-
+        final Button dwa = (Button) findViewById(R.id.dwa);
 
 
         addShifht.setOnClickListener(new View.OnClickListener() {
@@ -28,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(addShift);
             }
         });
+
+
+
 
 
     }
